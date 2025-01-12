@@ -1,0 +1,152 @@
+/* style.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Centered Container */
+div {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Heading Styles */
+h1, h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Buttons (Styled Links) */
+a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Specific Button Colors */
+a[href="login.html"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+a[href="register.html"] {
+    background-color: #008CBA;
+    color: white;
+}
+
+/* Hover Effects */
+a:hover {
+    opacity: 0.9;
+}
+
+/* Form Styles */
+form {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Conteneur des boutons */
+.button-container {
+    display: flex;
+    justify-content: flex-start; /* Aligner les boutons à gauche */
+    gap: 10px; /* Espacement entre les boutons */
+    margin-top: 20px;
+    align-items: center; /* Assurer que les boutons sont centrés verticalement */
+}
+
+/* Bouton "Retour" */
+a.back-button {
+    display: inline-block;
+    padding: 12px 25px; /* Garder la hauteur consistante avec le bouton vert */
+    background-color: #f44336; /* Rouge pour le bouton Retour */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    height: 25px; /* Fixe la hauteur à 50px pour uniformiser */
+    line-height: 25px; /* Centrer verticalement le texte */
+}
+
+a.back-button:hover {
+    background-color: #d32f2f; /* Rouge foncé pour effet hover */
+}
+
+/* Boutons de soumission */
+button {
+    padding: 12px 50px; /* Ajuster la largeur pour correspondre au rouge */
+    background-color: #4CAF50; /* Vert pour le bouton principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 50px; /* Fixe la hauteur à 50px pour uniformiser */
+    line-height: 25px; /* Centrer verticalement le texte */
+    white-space: nowrap; /* Empêche le texte de se casser sur plusieurs lignes */
+}
+
+button:hover {
+    background-color: #45a049; /* Vert foncé pour effet hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .button-container {
+        flex-direction: column; /* Boutons empilés sur petits écrans */
+        gap: 15px;
+    }
+}
